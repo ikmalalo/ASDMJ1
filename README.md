@@ -94,13 +94,13 @@ class CRUD:
     def menu_admin(self):
         while True:
             print("\n==== Selamat Datang Admin ====")
-            print("1. Lihat Robux, Subscription di tabel")
+            print("1. Lihat Robux di tabel")
             print("2. Tambah Data Robux")
             print("3. Ubah Data Robux")
-            print("4. Hapus Data")
+            print("4. Hapus Data Robux")
             print("5. Keluar")
 
-            pilih = input("Pilih menu(1-5): ")
+            pilih = input("Pilih menu (1-5): ")
 
             if pilih == "1":
                 self.lihat_robux()
@@ -174,12 +174,12 @@ class TopUp:
 def menu_login():
     admin_crud = CRUD()
     while True:
-        print("\n==== Selamat Datang di Game Robux Shop ====")
+        print("\n==== Selamat Datang di Toko Robux Kami ====")
         print("1. Login sebagai Admin")
         print("2. Login sebagai Player")
         print("3. Keluar")
 
-        pilih = input("Pilih menu(1-3): ")
+        pilih = input("Pilih menu (1-3): ")
 
         if pilih == "1":
             admin_crud.menu_admin()
@@ -190,11 +190,11 @@ def menu_login():
             player_topup.menu_player(xakun)
 
         elif pilih == "3":
-            print("Terima kasih. Sampai jumpa lagi!")
+            print("Terima kasih. Sudah Mampir Di Toko Kami!")
             break
 
         else:
-            print("Pilihan tidak valid. Silakan masukkan angka 1-3.")
+            print("Pilihan Gak Ada Coba masukkan angka 1-3.")
 
 if __name__ == "__main__":
     menu_login()
